@@ -3,8 +3,8 @@ def model_param_list():
     model_params['out_path'] = ''
     model_params['emb_size'] = 64
     model_params['dropout_rate'] = 0.001
-    model_params['max_drug_seq'] = 1000
-    model_params['max_protein_seq'] = 15000
+    model_params['max_drug_seq'] = 50
+    model_params['max_protein_seq'] = 545
     model_params['input_dim_drug'] = 23532
     model_params['input_dim_target'] = 16693
 
@@ -33,8 +33,10 @@ def model_param_list():
     model_params['fas_dict_path'] = 'dictionary/fasta_dict.pickle'
     model_params['smiles_max_len'] = 1500
     model_params['fasta_max_len'] = 15000
-    # model_params['smi_dict_len'] = 64  # The length of dictionary
-    # model_params['fas_dict_len'] = 8107  # The length of dictionary
+    # model_params['smi_dict_len'] = 61  # The length of dictionary
+    # model_params['fas_dict_len'] = 8083  # The length of dictionary
+    model_params['smi_dict_len'] = 64  # The length of dictionary  # zeng_data
+    model_params['fas_dict_len'] = 8107  # The length of dictionary
     model_params['smi_ngram'] = 1
     model_params['fas_ngram'] = 3
     model_params['protein_kernel'] = [4, 8, 12]
